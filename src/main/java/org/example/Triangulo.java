@@ -1,14 +1,14 @@
-import org.example.FigurasGeometricas;
+package org.example;
 
-public class Triangulo extends FigurasGeometricas{
+public class Triangulo extends FigurasGeometricas {
     private double base;
     private double altura;
     private double lado1;
     private double lado2;
     private double lado3;
 
-    public Triangulo(double base, double altura, double lado1, double lado2, double lado3) {
-        super(3,"Triangulo");
+    public Triangulo(String nombre, int numero_lados, double base, double altura, double lado1, double lado2, double lado3) {
+        super("Triangulo", 3);
         this.base = base;
         this.altura = altura;
         this.lado1 = lado1;
@@ -27,9 +27,9 @@ public class Triangulo extends FigurasGeometricas{
     @Override
     public void mostrarInformacion() {
         System.out.println("Nombre: " + getNombre());
-        System.out.println("Número de lados: " + getNlados());
+        System.out.println("Número de lados: " + getNumero_lados();
         System.out.println("Área: " + calcularArea());
         System.out.println("Perímetro: " + calcularPerimetro());
     }
-}
 
+}
