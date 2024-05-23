@@ -9,20 +9,6 @@ public class Main {
         Hexagono miFigura11 = new Hexagono();
 
         //HEXÁGONO-HEPTÁGONO-OCTÁGONO
-        System.out.println("Octogono");
-        System.out.println("El valor de la longitud es:");
-        miFigura10.setLongitudLado(7.5);
-        System.out.println(miFigura10.getlongitudLado());
-        System.out.println("El número de lados es:");
-        System.out.println(miFigura10.getNumero_lados());
-        System.out.println("El perimetro es:");
-        System.out.println(miFigura10.calcularPerimetro());
-        System.out.println("El valor de la apotema es");
-        miFigura10.setApotema(9.8);
-        System.out.println(miFigura10.getApotema());
-        System.out.println("El aréa es: ");
-        System.out.println(miFigura10.calcularArea());
-
         System.out.println("Heptagono");
         System.out.println("El valor de la longitud es");
         miFigura12.setLongitudLado(9.5);
@@ -50,6 +36,20 @@ public class Main {
         System.out.println(miFigura11.getApotema());
         System.out.println("El aréa es:");
         System.out.println(miFigura11.calcularArea());
+
+        System.out.println("Octogono");
+        System.out.println("El valor de la longitud es:");
+        miFigura10.setLongitudLado(7.5);
+        System.out.println(miFigura10.getlongitudLado());
+        System.out.println("El número de lados es:");
+        System.out.println(miFigura10.getNumero_lados());
+        System.out.println("El perimetro es:");
+        System.out.println(miFigura10.calcularPerimetro());
+        System.out.println("El valor de la apotema es");
+        miFigura10.setApotema(9.8);
+        System.out.println(miFigura10.getApotema());
+        System.out.println("El aréa es: ");
+        System.out.println(miFigura10.calcularArea());
 
         //ENEAGONO Y DECAGONO
         Eneagono figura9=new Eneagono();
