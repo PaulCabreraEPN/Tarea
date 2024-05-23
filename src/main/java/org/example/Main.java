@@ -4,6 +4,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
+        Octagono miFigura10 = new Octagono();
+        Heptagono miFigura12 = new Heptagono();
+        Hexagono miFigura11 = new Hexagono();
 
         System.out.println("Hola vamos a crear un Endacagono");
         System.out.println("Valor de un lado: ");
@@ -59,6 +62,36 @@ public class Main {
         System.out.println("El apotema es: "+figura10.getApotema());
         System.out.println("El PERIMETRO es."+ figura10.calcular_perimetro());
         System.out.println("El AREA es : "+figura10.calcular_area());
+
+        System.out.println("Octogono");
+        System.out.println("El valor de la longitud es:");
+        miFigura10.setLongitudLado(7.5);
+        System.out.println(miFigura10.getlongitudLado());
+        System.out.println("El número de lados es:");
+        System.out.println(miFigura10.getNumero_lados());
+        System.out.println("El perimetro es:");
+        System.out.println(miFigura10.calcularPerimetro());
+        System.out.println("El valor de la apotema es");
+        miFigura10.setApotema(9.8);
+        System.out.println(miFigura10.getApotema());
+        System.out.println("El aréa es: ");
+        System.out.println(miFigura10.calcularArea());
+        System.out.println("Heptagono");
+        System.out.println("El valor de la longitud es");
+        miFigura12.setLongitudLado(9.5);
+        System.out.println(miFigura12.getLongitudLado());
+        System.out.println("El número de lados es:");
+        System.out.println(miFigura12.getNumero_lados());
+        System.out.println("El perimetro es");
+        System.out.println(miFigura12.calcularPerimetro());
+        System.out.println("El valor de la apotema es");
+        miFigura12.setApotema(14.8);
+        System.out.println(miFigura12.getApotema());
+        System.out.println("El aréa es:");
+        System.out.println(miFigura12.calcularArea());
+        System.out.println("Hexagono");
+        System.out.println("El valor de la longitud es");
+        miFigura11.setLongitudLado(10.5);
 
     }
 

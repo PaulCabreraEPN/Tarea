@@ -3,7 +3,7 @@ package org.example;
 public class Octagono extends FigurasGeometricas {
     double longitudLado;
     double apotema;
-    int nlados = 8;
+    int numero_lados = 8;
     double perimetro;
     double area;
 
@@ -11,21 +11,21 @@ public class Octagono extends FigurasGeometricas {
         super("Octogono", 8);
     }
 
-    public Octagono(String nombre, int nlados, double longitudLado, double apotema, int nlados1, double perimetro, double area) {
-        super(nombre, nlados);
+    public Octagono(String nombre, int numero_lados, double longitudLado, double apotema, int nlados1, double perimetro, double area) {
+        super(nombre, numero_lados);
         this.longitudLado = longitudLado;
         this.apotema = apotema;
-        this.nlados = nlados1;
+        this.numero_lados= nlados1;
         this.perimetro = perimetro;
         this.area = area;
     }
 
-    public int getNlados() {
-        return this.nlados;
+    public int getNumero_lados() {
+        return this.numero_lados;
     }
 
-    public void setNlados(int nlados) {
-        super.setNlados(nlados);
+    public void setNumero_lados(int numero_lados) {
+        super.setNumero_lados(numero_lados);
     }
 
     public void setLongitudLado(double longitudLado) {
@@ -65,7 +65,7 @@ public class Octagono extends FigurasGeometricas {
     }
 
     public double calcularPerimetro() {
-        this.perimetro = (double)this.nlados * this.longitudLado;
+        this.perimetro = (double)this.numero_lados * this.longitudLado;
         return this.perimetro;
     }
 

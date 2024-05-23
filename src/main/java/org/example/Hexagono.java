@@ -3,7 +3,7 @@ package org.example;
 public class Hexagono extends FigurasGeometricas {
     double longitudLado;
     double apotema;
-    int nlados = 6;
+    int numero_lados = 6;
     double perimetro;
     double area;
 
@@ -11,21 +11,21 @@ public class Hexagono extends FigurasGeometricas {
         super("Hexagono", 6);
     }
 
-    public Hexagono(String nombre, int nlados, double longitudLado, double area, double perimetro, int nlados1, double apotema) {
-        super(nombre, nlados);
+    public Hexagono(String nombre, int numero_lados, double longitudLado, double area, double perimetro, int nlados1, double apotema) {
+        super(nombre, numero_lados);
         this.longitudLado = longitudLado;
         this.area = area;
         this.perimetro = perimetro;
-        this.nlados = nlados1;
+        this.numero_lados = nlados1;
         this.apotema = apotema;
     }
 
-    public int getNlados() {
-        return this.nlados;
+    public int getNumero_lados() {
+        return this.numero_lados;
     }
 
-    public void setNlados(int nlados) {
-        super.setNlados(nlados);
+    public void setNumero_lados(int numero_lados) {
+        super.setNumero_lados(numero_lados);
     }
 
     public void setLongitudLado(double longitudLado) {
@@ -65,7 +65,7 @@ public class Hexagono extends FigurasGeometricas {
     }
 
     public double calcularPerimetro() {
-        this.perimetro = (double)this.nlados * this.longitudLado;
+        this.perimetro = (double)this.numero_lados * this.longitudLado;
         return this.perimetro;
     }
 
@@ -73,5 +73,5 @@ public class Hexagono extends FigurasGeometricas {
         this.area = this.perimetro * this.apotema;
         return this.area;
     }
-}{
 }
+

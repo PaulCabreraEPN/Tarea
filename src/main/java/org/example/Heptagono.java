@@ -20,12 +20,12 @@ public class Heptagono extends FigurasGeometricas {
             this.area = area;
         }
 
-        public int getNlados() {
-            return this.nlados;
+        public int getNumero_lados() {
+            return this.numero_lados;
         }
 
-        public void setNlados(int nlados) {
-            super.setNlados(nlados);
+        public void setNumero_lados(int numero_lados) {
+            super.setNumero_lados(numero_lados);
         }
 
         public void setLongitudLado(double longitudLado) {
@@ -70,4 +70,4 @@ public class Heptagono extends FigurasGeometricas {
             return this.area;
         }
     }
-}
+
