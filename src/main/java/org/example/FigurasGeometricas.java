@@ -24,4 +24,9 @@ public class FigurasGeometricas {
     public void setNumero_lados(int numero_lados) {
         this.numero_lados = numero_lados;
     }
+
+    public void mostrarInformacion() {
+        // Este método se sobrescribirá en las subclases
+    }
+
 }
