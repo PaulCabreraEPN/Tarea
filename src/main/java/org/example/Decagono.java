@@ -3,7 +3,10 @@ package org.example;
 public class Decagono extends FigurasGeometricas{
     double med_lado;
     double apotema;
-    public Decagono(){}
+
+    public Decagono(){
+        super("Decagono",10);
+    }
     public Decagono(String nombre, int num_lados,double lado, double apotema){
         super(nombre,num_lados);
         this.med_lado = lado;
