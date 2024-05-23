@@ -8,26 +8,27 @@ public class Eneagono extends FigurasGeometricas{
         this.med_lado = lado;
         this.apotema = apotema;
     }
-    public Eneagono(){}
+
+    public Eneagono() {}
 
 
     @Override
     public String getNombre() {
         return "Eneagono";
     }
-
     @Override
     public void setNombre(String nombre) {
         super.setNombre(nombre);
     }
 
     @Override
-    public int getNum_lados() {
+    public int getNumero_lados() {
         return 9;
     }
+
     @Override
-    public void setNum_lados(int num_lados) {
-        super.setNum_lados(num_lados);
+    public void setNumero_lados(int numero_lados) {
+        super.setNumero_lados(numero_lados);
     }
 
     public double getMed_lado() {
@@ -47,9 +48,9 @@ public class Eneagono extends FigurasGeometricas{
     }
 
     public double calcular_perimetro(){
-        return getNum_lados() * med_lado;
+        return getNumero_lados() * med_lado;
     }
     public double calcular_area(){
-        return (getNum_lados() * apotema * med_lado)/2 ;
+        return (getNumero_lados() * apotema * med_lado)/2 ;
     }
 }
