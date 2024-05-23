@@ -3,6 +3,21 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        FigurasGeometricas cuadrado = new Cuadrado(2.00);
+        FigurasGeometricas triangulo = new Triangulo(3, 4, 3, 4, 5);
+        FigurasGeometricas pentagono = new Pentagono(6);
+        System.out.println("Cuadrado:\n");
+        cuadrado.mostrarInformacion();
+        System.out.println("Triángulo:\n");
+        triangulo.mostrarInformacion();
+        System.out.println("\nInformación del Pentágono:");
+        pentagono.mostrarInformacion();
+
+
+
+
+
+
         Scanner sc=new Scanner(System.in);
         Octagono miFigura10 = new Octagono();
         Heptagono miFigura12 = new Heptagono();
