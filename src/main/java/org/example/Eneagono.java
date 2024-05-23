@@ -9,9 +9,6 @@ public class Eneagono extends FigurasGeometricas{
         this.apotema = apotema;
     }
 
-    public Eneagono() {}
-
-
     @Override
     public String getNombre() {
         return "Eneagono";
